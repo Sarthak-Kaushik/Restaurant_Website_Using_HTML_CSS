@@ -7,9 +7,132 @@ box-sizing: border-box;
 }
 html,
 body {
-height: 100%;
 width: 100%;
 font-weight: 300;
 line-height: 1.4;
+font-family: "Robboto", sans-serif;
 }
 
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    transition: 0.2 ease-in-out;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+nav {
+    background-color: transparent;
+    padding: 20px;
+    position: sticky;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    margin-bottom: 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo_container {
+    cursor: pointer;
+}
+
+.bar_icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.tag {
+    align-self: flex-start;
+    background-color: #149f39;
+    color: white;
+    padding: 10px;
+}
+
+.explore_btn {
+    background-color: rgb(255, 190, 94);
+    color: white;
+    align-self: flex-start;
+}
+
+.hero_content h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.feature {
+    display: flex;
+    gap: 1.25rem;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.08);
+}
+
+@media (max-width: 786px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero img {
+        width: 80%;
+    }
+
+    .hero_content {
+        gap: 0.650rem;
+        padding: 10px;
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+    }
+}
+
+.line {
+    border: 2px solid #ccc;
+    margin: 20px 0 20px 0;
+}
